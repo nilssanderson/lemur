@@ -1,0 +1,26 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+
+    title:
+        tab: Title
+        label: Title
+        comment: Enter the title for the job (Maximum Characters: 140)
+
+    department:
+        label: Department
+        searchable: true
+        relation: department
+        valueFrom: name
+
+    description:
+        tab: Description
+        label: Description
+        comment: Enter the description for the job
+        type: textarea
+        invisible: true

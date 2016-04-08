@@ -1,0 +1,17 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+        name:
+            tab: General
+            label: Name
+            comment: Enter the name for the department (Maximum Characters: 32)
+
+        description:
+            tab: General
+            label: Description
+            comment: Enter the description for the department
+            type: richeditor
+            size: huge

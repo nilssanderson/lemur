@@ -1,0 +1,9 @@
+{% component "departmentList" %}
+{% set departments = __SELF__.departments %}
+
+{% for department in departments %}
+    <a name="{{ department.name|replace(' ', '-')|lower }}"></a>
+    <h2>{{ department.name }}</h2>
+    <h4>{{ department.subtitle }}</h4>
+    <p>{{ department.description|raw }}</p>
+{% endfor %}

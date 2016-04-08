@@ -1,0 +1,24 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+        title:
+            tab: General
+            label: Title
+            comment: Enter the name for the job (Maximum Characters: 140)
+
+        description:
+            tab: General
+            label: Introduction
+            comment: Enter the introduction for the job
+            type: richeditor
+            size: huge
+
+        department:
+            tab: Department
+            label: Department
+            comment: Set the jobs's department here
+            type: relation
+            nameFrom: name

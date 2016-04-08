@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Department
+
+# Model Form Field configuration
+form: $/nilssanderson/jobs/models/department/fields.yaml
+
+# Model Class name
+modelClass: NilsSanderson\Jobs\Models\Department
+
+# Default redirect location
+defaultRedirect: nilssanderson/jobs/department
+
+# Create page
+create:
+    title: Create Department
+    redirect: nilssanderson/jobs/department/update/:id
+    redirectClose: nilssanderson/jobs/department
+
+# Update page
+update:
+    title: Edit Department
+    redirect: nilssanderson/jobs/department
+    redirectClose: nilssanderson/jobs/department
+
+# Preview page
+preview:
+    title: Preview Department

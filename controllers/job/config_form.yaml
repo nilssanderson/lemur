@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Job
+
+# Model Form Field configuration
+form: $/nilssanderson/jobs/models/job/fields.yaml
+
+# Model Class name
+modelClass: NilsSanderson\Jobs\Models\Job
+
+# Default redirect location
+defaultRedirect: nilssanderson/jobs/job
+
+# Create page
+create:
+    title: Create Job
+    redirect: nilssanderson/jobs/job/update/:id
+    redirectClose: nilssanderson/jobs/job
+
+# Update page
+update:
+    title: Edit Job
+    redirect: nilssanderson/jobs/job
+    redirectClose: nilssanderson/jobs/job
+
+# Preview page
+preview:
+    title: Preview Job

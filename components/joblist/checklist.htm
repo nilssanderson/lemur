@@ -1,0 +1,16 @@
+{% component "itemList" %}
+{% set items = __SELF__.items %}
+
+{% for item in items %}
+    <a name="{{ item.name|replace(' ', '-')|lower }}"></a>
+    <div class="column _1">
+        <h2>{{ item.name }}</h2>
+        <div class="column _3">
+            <!-- <img src="{{ 'build/assets/img/placeholder/seeds-placeholder.jpg'|theme }}" alt="Est 2015" /> -->
+            <img src="{{ image.item.path }}" alt="{{ image.item.name }}" />
+        </div>
+        <div class="column _7 pad-left article r">
+            {{ item.description|raw }}
+        </div>
+    </div>
+{% endfor %}

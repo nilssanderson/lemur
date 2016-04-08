@@ -1,0 +1,16 @@
+{% component "itemList" %}
+{% set items = __SELF__.items %}
+
+{% for item in items %}
+    <a name="{{ item.name|replace(' ', '-')|lower }}"></a>
+    <h2>{{ item.name }}</h2>
+    <p>{{ item.description|raw }}</p>
+
+    {% if item.slideshow_images|length > 1 %} <!-- Should not have logic here -->
+        <ul class="inline-carousel">
+            {% for image in item.slideshow_images %}
+                <li><img src="{{ image.path }}" alt="{{ item.image.file_name }}"/></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endfor %}

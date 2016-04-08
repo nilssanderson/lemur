@@ -1,0 +1,8 @@
+1.0.1:
+    - First version of Jobs
+1.0.2:
+    - Create the migration and seeders for Jobs tables
+    - create_jobs_departments_table.php
+    - create_jobs_jobs_table.php
+    - seed_jobs_departments.php
+    - seed_jobs_jobs.php

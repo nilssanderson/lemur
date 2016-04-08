@@ -1,0 +1,10 @@
+{% component "itemMenu" %}
+{% set items = __SELF__.menuJobs %}
+
+<ul id="sticky-nav" class="sticky-nav">
+    {% for item in menuJobs %}
+        {% if item.name %}
+            <li><a href="#{{ item.name|replace(' ', '-')|lower }}">{{ item.name }}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
